@@ -1,0 +1,59 @@
+/* src/styles/AdoptionMatchPage.css */
+
+.adoption-match-page {
+  background-color: #fff;
+  min-height: 100vh;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+.match-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.match-container h2 {
+  font-size: 22px;
+  color: #444;
+  margin-bottom: 16px;
+}
+
+.match-container h3 {
+  font-size: 20px;
+  margin-bottom: 24px;
+  color: #222;
+}
+
+.card-options {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+}
+
+.option-card {
+  background-color: #fdfcf5;
+  border: 2px solid #ffe08c;
+  border-radius: 10px;
+  padding: 20px 30px;
+  min-width: 150px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 16px;
+  color: #333;
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.2s;
+}
+
+.option-card:hover {
+  background-color: #fff4bd;
+  transform: translateY(-2px);
+}
+
+.btn-group {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 20px;
+}

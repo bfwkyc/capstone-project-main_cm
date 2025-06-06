@@ -1,0 +1,309 @@
+.register-container {
+  margin: 0 auto;
+  padding: 0;
+  background: #fff;
+}
+
+.row {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 24px;
+}
+
+.inputs input,
+select {
+  display: block;
+  width: 100%;
+  margin-bottom: 12px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: #fff;
+}
+
+.color-picker {
+  margin-bottom: 16px;
+}
+
+.color-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.color-options button {
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  background: #fff;
+  cursor: pointer;
+}
+
+.color-options .selected {
+  background: #ffd74b;
+  border-color: #ffb800;
+  font-weight: bold;
+}
+
+.select-group {
+  margin-bottom: 16px;
+}
+
+.select-group button {
+  margin-right: 12px;
+  padding: 8px 16px;
+  border: 1px solid #ccc;
+  background: #fff;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.select-group .selected {
+  background: #ffd74b;
+  border-color: #ffb800;
+  font-weight: bold;
+}
+
+textarea {
+  width: 100%;
+  height: 80px;
+  margin-bottom: 16px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  resize: vertical;
+}
+
+input[type="date"],
+input[name="lostLocation"] {
+  display: block;
+  width: 100%;
+  margin-bottom: 12px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: #fff;
+}
+
+.btn-group {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+}
+
+.save {
+  background: #e0e0e0;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.submit {
+  background: #ffd74b;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.image-preview-area {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 12px;
+  overflow-x: auto;
+  padding-bottom: 8px;
+}
+
+.image-thumb,
+.upload-box {
+  width: 100px;
+  height: 100px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f9f9f9;
+  flex-shrink: 0;
+}
+
+.image-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.delete-btn {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  background: rgba(0,0,0,0.5);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  font-size: 12px;
+}
+
+.upload-box {
+  cursor: pointer;
+  font-size: 32px;
+  color: #bbb;
+  transition: background 0.3s;
+}
+
+.upload-box:hover {
+  background: #eee;
+}
+
+input.invalid,
+select.invalid,
+textarea.invalid {
+  border: 2px solid red;
+}
+
+.prediction-popup {
+  background-color: #fff8d8;
+  border: 1px solid #ccc;
+  padding: 16px 20px;
+  border-radius: 10px;
+  margin: 20px 0;
+  font-size: 15px;
+  line-height: 1.6;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.prediction-popup p {
+  margin: 0;
+  font-weight: 500;
+}
+
+.prediction-popup .btn-group {
+  margin-top: 12px;
+  display: flex;
+  gap: 10px;
+}
+
+.prediction-popup .btn-group button {
+  padding: 8px 16px;
+  font-weight: bold;
+  font-size: 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background-color: #ffe08c;
+  transition: background-color 0.2s ease;
+}
+
+.prediction-popup .btn-group button:hover {
+  background-color: #ffd95c;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4); /* 어두운 배경 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.prediction-modal {
+  background-color: #fff8d8;
+  border-radius: 12px;
+  padding: 24px 28px;
+  max-width: 400px;
+  width: 90%;
+  font-size: 16px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.25);
+  animation: popUp 0.25s ease;
+}
+
+.prediction-modal p {
+  margin: 0;
+  font-weight: 500;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.prediction-modal .btn-group {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.prediction-modal .btn-group button {
+  padding: 10px 20px;
+  background-color: #ffe08c;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.prediction-modal .btn-group button:hover {
+  background-color: #ffd95c;
+}
+
+@keyframes popUp {
+  from {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.header {
+  z-index: 1;
+}
+
+.form-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  width: 120px; /* 라벨 너비 고정 */
+  margin-left: 10px;
+  margin-right: 30px;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: #fff;
+}

@@ -1,0 +1,43 @@
+.animal-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+  }
+  
+  .animal-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+  
+  .animal-image {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    display: block;
+  }
+  
+  .animal-info {
+    padding: 16px;
+    font-size: 14px;
+    background-color: white;
+    flex-grow: 1;
+  }
+  
+  .animal-breed {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 4px;
+  }
+  
+  .animal-details,
+  .animal-date,
+  .animal-location {
+    margin: 2px 0;
+    color: #444;
+  }
+  

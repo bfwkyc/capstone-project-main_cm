@@ -1,0 +1,82 @@
+/* src/styles/LoginPage.css */
+
+.login-page {
+    background-color: #fff;
+    min-height: 100vh;
+    font-family: 'Noto Sans KR', sans-serif;
+  }
+  
+  .login-content {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  .login-content h2 {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+  
+  .login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 24px;
+  }
+  
+  .login-form label {
+    text-align: left;
+    font-weight: bold;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+  
+  .login-form input {
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+  }
+  
+  .login-btn,
+  .kakao-btn {
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .login-btn {
+    background-color: #ffe08c;
+  }
+  
+  .kakao-btn {
+    background-color: #ffe08c;
+    color: #000;
+    margin-top: 8px;
+  }
+  
+  .divider {
+    margin: 20px 0;
+    font-size: 14px;
+    color: #888;
+    position: relative;
+  }
+  
+  .signup-link {
+    margin-top: 20px;
+    font-size: 14px;
+  }
+  
+  .signup-link a {
+    color: #007aff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  

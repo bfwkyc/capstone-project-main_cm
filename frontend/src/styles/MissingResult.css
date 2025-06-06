@@ -1,0 +1,110 @@
+/* MissingResult.css */
+
+.missing-result {
+  margin: 0 auto;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  margin-bottom: 24px;
+  overflow: hidden;
+  transition: filter 0.3s ease;
+}
+
+.card.faded {
+  filter: grayscale(100%) opacity(0.6);
+}
+
+.card-left {
+  width: 260px;
+  height: 260px;
+  margin-left: 20px;
+  flex-shrink: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-left img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.card-right {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card-question {
+  font-size: 18px;
+  margin-bottom: 12px;
+  font-weight: bold;
+}
+
+.card-info {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 16px 0;
+}
+
+.card-info li {
+  margin-bottom: 4px;
+  font-size: 14px;
+}
+
+.card-actions {
+  display: flex;
+  gap: 12px;
+}
+
+.card-actions button,
+.move-button {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.card-actions .yes {
+  background-color: #ffd74b;
+  color: #000;
+}
+
+.card-actions .no {
+  background-color: #e0e0e0;
+  color: #000;
+}
+
+.move-button {
+  background-color: #4caf50;
+  color: white;
+}
+
+.card-fail {
+  font-weight: bold;
+  color: red;
+  margin-bottom: 8px;
+}
+
+.section h3.collapsible-header {
+  cursor: pointer;
+  user-select: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 18px;
+  margin-bottom: 16px;
+}

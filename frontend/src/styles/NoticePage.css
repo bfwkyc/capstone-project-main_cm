@@ -1,0 +1,58 @@
+/* NoticePage.css */
+
+.notice-page {
+    background-color: #fff;
+    min-height: 100vh;
+  }
+  
+  .notice-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+  }
+  
+  .notice-content h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .notice-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  
+  .notice-item {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  }
+  
+  .notice-item h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+  
+  .notice-date {
+    font-size: 13px;
+    color: #888;
+    display: block;
+    margin-bottom: 12px;
+  }
+  
+  .notice-item p {
+    font-size: 15px;
+    line-height: 1.5;
+    color: #333;
+  }
+  

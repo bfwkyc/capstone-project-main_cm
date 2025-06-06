@@ -1,0 +1,17 @@
+
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  margin: 0 auto;
+  padding: 0;
+  background-color: #ffffff;
+}
+
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  background-color: #0388FE;
+  cursor: pointer;
+}
