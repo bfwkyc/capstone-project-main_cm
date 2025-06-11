@@ -66,7 +66,7 @@ function MenuBar() {
                 const isExternal = sub.path.startsWith('http');
                 if (isExternal) {
                   return (
-                    <a href={sub.path} className="dropdown-item" key={subIdx} target="_blank" rel="noopener noreferrer">
+                    <a href={sub.path} className="dropdown-item" key={subIdx}>
                       {sub.title}
                     </a>
                   );
